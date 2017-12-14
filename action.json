@@ -1,0 +1,36 @@
+{
+  "actions": [
+    {
+      "description": "Default Welcome Intent",
+      "name": "MAIN",
+      "fulfillment": {
+      "conversationName": "testApp"
+    },
+      "intent": {
+        "name": "actions.intent.MAIN",
+        "trigger": {
+          "queryPatterns": [
+            "open cloud fleet manager",
+            "open c f m"
+            ]
+        }
+      }
+    }
+  ],
+  "types": [],
+  "conversations": {
+    "cloud fleet manager": {
+      "name": "testApp",
+      "url": "https://572e66a2.ngrok.io/",
+      "fulfillmentApiVersion": 2,
+      "in_dialog_intents": [
+        {
+          "name": "actions.intent.NO_INPUT"
+        },
+        {
+          "name": "actions.intent.SIGN_IN"
+        }
+      ]
+    }
+  }
+}
